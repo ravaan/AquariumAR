@@ -22,8 +22,29 @@ public class OnClickButton : MonoBehaviour {
     {
         Application.LoadLevel("Main");
     }
+
     public void LoadComingSoon()
     {
         Application.LoadLevel("ComingSoon");
+    }
+
+    public void LoadInstructions()
+    {
+        Application.LoadLevel("Instructions");
+    }
+
+    public void LoadQR()
+    {
+        Application.LoadLevel("QR");
+    }
+
+    public void LoadOptions()
+    {
+        Application.LoadLevel("Options");
+    }
+
+    public void LoadCamera()
+    {
+        Application.LoadLevel("Camera");
     }
 }
