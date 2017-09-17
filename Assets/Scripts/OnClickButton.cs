@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class OnClickButton : MonoBehaviour {
 
@@ -15,36 +17,36 @@ public class OnClickButton : MonoBehaviour {
 	}
     public void LoadOtherScene()
     {
-        Application.LoadLevel("Others");
+        SceneManager.LoadScene("Others");
     }
     
     public void LoadMain()
     {
-        Application.LoadLevel("Main");
+        SceneManager.LoadScene("Main");
     }
 
     public void LoadComingSoon()
     {
-        Application.LoadLevel("ComingSoon");
+        SceneManager.LoadScene("ComingSoon");
     }
 
     public void LoadInstructions()
     {
-        Application.LoadLevel("Instructions");
+        SceneManager.LoadScene("Instructions");
     }
 
     public void LoadQR()
     {
-        Application.LoadLevel("QR");
+        SceneManager.LoadScene("QR");
     }
 
     public void LoadOptions()
     {
-        Application.LoadLevel("Options");
+        SceneManager.LoadScene("Options");
     }
 
     public void LoadCamera()
     {
-        Application.LoadLevel("Camera");
+        SceneManager.LoadScene("Camera");
     }
 }
