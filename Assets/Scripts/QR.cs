@@ -8,7 +8,7 @@ using ZXing;
 using ZXing.QrCode;
 
 public class QR : MonoBehaviour {
-	public Text text_box;
+	//public Text text_box;
 	private string text =  "";
 	private WebCamTexture camTexture;
 	private Rect screenRect;
@@ -26,17 +26,20 @@ public class QR : MonoBehaviour {
 	void Update()
 	{
 		if (text != "") {
-			text_box.text = text;
-			StartCoroutine(timer());
-		}
+            //text_box.text = text;
+            //StartCoroutine(timer());
+            PlayerPrefs.SetString("QRCode", text);
+            Handheld.Vibrate();
+            SceneManager.LoadScene("Options");
+        }
 	}
 
-	IEnumerator timer()
-	{
-		yield return new WaitForSeconds(5);
-		SceneManager.LoadScene ("Options");
+	//IEnumerator timer()
+	//{
+	//	yield return new WaitForSeconds(5);
+	//	SceneManager.LoadScene ("Options");
 
-	}
+	//}
 
 	void OnGUI () {
 		// drawing the camera on screen
