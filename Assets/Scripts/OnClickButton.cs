@@ -49,4 +49,8 @@ public class OnClickButton : MonoBehaviour {
     {
         SceneManager.LoadScene("Camera");
     }
+    public void LoadCameraTest()
+    {
+        SceneManager.LoadScene("test");
+    }
 }
