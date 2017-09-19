@@ -53,4 +53,8 @@ public class OnClickButton : MonoBehaviour {
     {
         SceneManager.LoadScene("test");
     }
+    public void LoadQRTest()
+    {
+        SceneManager.LoadScene("test 1");
+    }
 }
